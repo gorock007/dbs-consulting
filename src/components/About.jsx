@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
 import { Link } from 'react-router-dom'
+import { animateScroll as scroll } from 'react-scroll';
 
 const Container = styled.div`
     color: #fff;
@@ -117,13 +118,30 @@ const ArrowRight = styled(MdKeyboardArrowRight)`
 `
 
 export const About = ({lightBg, id, imgStart, lightText, darkText, primary, dark, dark2,
-                        top, title, subtitle, buttonlabel, showButton, img}) => {
-    const [hover, setHover] = useState(false)
+                        top, title, subtitle, buttonlabel, showButton, img, isOpen, toggle}) => {
+    
+    const [hover, setHover] = useState(false);
+    const [scrollNav, setScrollNav] = useState(false)
+    const changeNav = () => {
+        if (window.scrollY >= 80) {
+            setScrollNav(true)
+        } else {
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, []);
+
+    const toggleHome = () => {
+        scroll.scrollToTop()
+    }
     const onHover =()=>{
         setHover(!hover)
     }
   return (
-    <Container lightBg={lightBg} id={id}>
+    <Container lightBg={lightBg} id={id} scrollNav={scrollNav}>
         <Wrapper>
         <Row imgStart={imgStart}>
             <Column1>
@@ -133,9 +151,9 @@ export const About = ({lightBg, id, imgStart, lightText, darkText, primary, dark
                     <Subtitle darkText={darkText}>{subtitle}</Subtitle>
                     <ButtonWrapper>
                         {showButton && (
-                            <Button to='/about' onMouseEnter={onHover}
+                            <Button to='/about' onClick={toggleHome} onMouseEnter={onHover}
                                 onMouseLeave={onHover}
-                                smooth={true} duration={500} spy={true} exact="true" offset={-80}
+                                smooth='true' duration={500} spy='true' exact="true" offset={-80}
                                 primary={primary ? 1 : 0} dark={dark ? 1 : 0} dark2={dark2 ? 1 : 0}>
                                 {buttonlabel}{hover ? <ArrowForward /> : <ArrowRight />}</Button>
                         )}

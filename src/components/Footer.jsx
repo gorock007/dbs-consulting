@@ -81,7 +81,6 @@ const Footer = () => {
                         <FooterLink style={{ cursor: 'none', pointerEvents: 'none' }}>Address</FooterLink>
                         <FooterLink style={{ cursor: 'none', pointerEvents: 'none' }}>Phone Number</FooterLink>
                         <FooterLink style={{ cursor: 'none', pointerEvents: 'none' }}>Email</FooterLink>
-                        {/* <FooterLink to='/about'>Terms of Service</FooterLink> */}
                     </LinkItems>
                 </LinkWrapper>
                 <LinkWrapper>
@@ -90,7 +89,6 @@ const Footer = () => {
                         <FooterLink href='https://www.google.com/maps?q=Ghorahi,+Dang,+Nepal' target='_blank' rel='noopener noreferrer'>Ghorahi, Dang, Nepal</FooterLink>
                         <FooterLink href='tel:+97782564077'>+977 82564077</FooterLink>
                         <FooterLink href='mailto:info.dbsnepal@gmail.com' target='_blank' rel='noopener noreferrer'>info.dbsnepal@gmail.com</FooterLink>
-                        {/* <FooterLink to='/about'>Terms of Service</FooterLink> */}
                     </LinkItems>
                     <LinkItems>
                         <LinkTitle>Social Media</LinkTitle>

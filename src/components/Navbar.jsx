@@ -65,7 +65,7 @@ const Menu = styled.ul`
         display: none;
     }
 `
-const MenuItem = styled(linkR)`
+const MenuItem = styled.div`
     height: 80px;
     font-size: 15px;
     cursor: pointer;
@@ -117,7 +117,6 @@ const Navbar = ({toggle}) => {
                 </MenuItem>
                 <MenuItem>
                     <MenuLinks to='/about' onClick={toggleHome}
-                        // smooth={true} duration={500} spy={true} exact='true' offset={-80}
                     >Why Us</MenuLinks>
                 </MenuItem>
                 <MenuItem>
