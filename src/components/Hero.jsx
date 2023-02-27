@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import Video from '../videos/bg.mp4'
+import Video from '../videos/bg2.mp4'
 import {MdArrowForward, MdKeyboardArrowRight} from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
