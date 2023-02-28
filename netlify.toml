@@ -1,25 +1,25 @@
 [[redirects]]
   from = "/about"
-  to = "/about"
+  to = "dbsnepal.com/about"
   status = 200
   force = true
  
 [[redirects]]
   from = "/services"
-  to = "/services"
+  to = "dbsnepal.com/services"
   status = 200
   force = true
  
 
 [[redirects]]
   from = "/blog"
-  to = "/blog"
+  to = "dbsnepal.com/blog"
   status = 200
   force = true
  
 [[redirects]]
   from = "/contact"
-  to = "/contact"
+  to = "dbsnepal.com/contact"
   status = 200
   force = true
  
