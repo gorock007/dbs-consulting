@@ -9,10 +9,16 @@ import Sidebar from '../components/Sidebar';
 
 const Container = styled.div`
   background-color: #fff;
+  padding: 50px 0;
 
-  @media screen and (max-width: 768px){
-      padding: 5px 0;
+  /* @media screen and (max-width: 768px){
+      padding: 20px 0;
   }
+   */
+  @media screen and (max-width: 768px){
+        padding: 20px 0;
+        
+    }
 
 `
 const InfoWrapper = styled.div`
@@ -52,11 +58,22 @@ const Column2 =styled.div`
   grid-area: col2;
   padding: 0 15px;
   margin-bottom: 15px;
+
+  @media screen and (max-width:768px){
+    padding-left: 0px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
 `
 const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+
+  /* @media screen and (max-width: 768px){
+        padding: 100px 48px;
+    } */
 `
 const Description = styled.p`
   max-width: 440px;

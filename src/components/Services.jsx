@@ -15,7 +15,7 @@ const Container = styled.div`
         height: 1100px;
     }
     @media screen and (max-width: 480px){
-        height: 1300px;
+        height: 1400px;
     }
 `
 const Wrapper = styled.div`
@@ -65,6 +65,7 @@ const Top = styled.h1`
 
     @media screen and (max-width: 480px){
         font-size: 2rem;
+       
     }
 `
 const Title = styled.h2`

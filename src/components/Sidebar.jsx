@@ -69,6 +69,11 @@ const HomeButton = styled.div`
     justify-content: center;
     padding-left: 8%;
     
+    @media screen and (max-width:480px){
+        padding-left: 0%;
+    }
+
+    
 `
 const HomeRoute = styled(LinkR)`
     color: #fff;

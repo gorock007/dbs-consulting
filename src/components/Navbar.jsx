@@ -40,6 +40,15 @@ const Logo = styled(linkR)`
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
+
+    @media screen and (max-width: 768px){
+        font-size: 1.3rem;
+        margin-left: 0;
+    }
+    @media screen and (max-width: 480px){
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
 `
 const HamburgerIcon = styled.div`
     display: none;
@@ -54,6 +63,10 @@ const HamburgerIcon = styled.div`
         cursor: pointer;
         color: #fff;
     }
+    @media screen and (max-width: 480px){
+        font-size: 1.7rem;
+    }
+
 `
 const Menu = styled.ul`
     display: flex;

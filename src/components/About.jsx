@@ -9,8 +9,12 @@ const Container = styled.div`
     background: ${({lightBg}) => (lightBg? '#f9f9f9': '#010606')};
 
     @media screen and (max-width: 768px){
-        padding: 100px 0;
+        padding: 100px 48px;
     }
+    
+    @media screen and (min-width: 1024px) {
+        padding: 120px 80px;
+  }
 `
 const Wrapper = styled.div`
     display: grid;
