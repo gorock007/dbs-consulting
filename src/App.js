@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import Home from './views/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -20,7 +20,6 @@ function App() {
         <Route path='/about' onClick={handleClick} element={<About/>} exact />
         <Route path='/services' onClick={handleClick} element={<Services/>} exact />
         <Route path='/blog' onClick={handleClick} element={<Blog/>} exact />
-
         <Route path='/contact' onClick={handleClick} element={<ContactUs/>} exact />
       </Routes>
   

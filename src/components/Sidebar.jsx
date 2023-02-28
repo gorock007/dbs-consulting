@@ -119,7 +119,7 @@ const Sidebar = ({isOpen, toggle}) => {
                 <Link to='/contact' onClick={toggleHome}>Contact</Link>
             </Menu>
             <HomeButton>
-                <HomeRoute to='/'>Home</HomeRoute>
+                <HomeRoute to='/' onClick={toggleHome}>Home</HomeRoute>
             </HomeButton>
         </Wrapper>
     </Container>
