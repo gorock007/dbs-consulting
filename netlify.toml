@@ -1,0 +1,25 @@
+[[redirects]]
+  from = "/about"
+  to = "/about"
+  status = 200
+  force = true
+ 
+[[redirects]]
+  from = "/services"
+  to = "/services"
+  status = 200
+  force = true
+ 
+
+[[redirects]]
+  from = "/blog"
+  to = "/blog"
+  status = 200
+  force = true
+ 
+[[redirects]]
+  from = "/contact"
+  to = "/contact"
+  status = 200
+  force = true
+ 
