@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 import dpkimg from '../images/deepak.jpg'
 import nikimg from '../images/nikunja.jpg'
+import artiimg from '../images/arti.JPG'
+import gangaimg from '../images/ganga.JPG'
+import roshanimg from '../images/roshan.jpeg'
 
 
 const Container = styled.div`
@@ -91,17 +94,17 @@ const Team = () => {
                     <MemberRole>Industrial Project & Management Consultant</MemberRole>
                 </MemberContainer>
                 <MemberContainer>
-                    <MemberImage src="https://via.placeholder.com/200x200" alt="Team member 3" />
+                    <MemberImage src={roshanimg} alt="Team member 3" />
                     <MemberName>Roshan Adhikari</MemberName>
                     <MemberRole>Associate Manager</MemberRole>
                 </MemberContainer>
                 <MemberContainer>
-                    <MemberImage src="https://via.placeholder.com/200x200" alt="Team member 3" />
+                    <MemberImage src={artiimg} alt="Team member 3" />
                     <MemberName>Arati Neupane</MemberName>
                     <MemberRole>Operation Manager</MemberRole>
                 </MemberContainer>
                 <MemberContainer>
-                    <MemberImage src="https://via.placeholder.com/200x200" alt="Team member 3" />
+                    <MemberImage src={gangaimg} alt="Team member 3" />
                     <MemberName>Ganaga KC</MemberName>
                     <MemberRole>Account & Admin Officer</MemberRole>
                 </MemberContainer>
