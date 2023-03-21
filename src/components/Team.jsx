@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import dpkimg from '../images/deepak.jpg'
 import nikimg from '../images/nikunja.jpg'
 import artiimg from '../images/arti.JPG'
-import gangaimg from '../images/ganga.JPG'
+import femaleimg from '../images/female.png'
 import roshanimg from '../images/roshan.jpeg'
 
 
@@ -99,13 +99,13 @@ const Team = () => {
                     <MemberRole>Associate Manager</MemberRole>
                 </MemberContainer>
                 <MemberContainer>
-                    <MemberImage src={artiimg} alt="Team member 3" />
+                <MemberImage src={artiimg} alt="Team member 3" />
                     <MemberName>Arati Neupane</MemberName>
                     <MemberRole>Operation Manager</MemberRole>
                 </MemberContainer>
                 <MemberContainer>
-                    <MemberImage src={gangaimg} alt="Team member 3" />
-                    <MemberName>Ganaga KC</MemberName>
+                <MemberImage src={femaleimg} alt="Team member 3" />
+                    <MemberName>Barsha Ghimere</MemberName>
                     <MemberRole>Account & Admin Officer</MemberRole>
                 </MemberContainer>
             </TeamContainer>
